@@ -354,7 +354,6 @@ header{
     gap: 2rem;
     position: relative;
     overflow: hidden;
-
 }
 
 .desti-best-img-card-img{
@@ -613,11 +612,20 @@ header{
         width: 3.8em;
     }
     /* ------------------------------? */
+    .desti-best-hero-card{
+        grid-template-columns: repeat(2,1fr);
+        overflow: hidden;
+    }
+    
    
 }
 
 
 @media (max-width: 428px){
+    .desti-best-hero-card{
+        grid-template-columns: repeat(1,1fr);
+        overflow: hidden;
+    }
     header{
         font-size: 0.6rem;
         padding: 1rem 0rem;
@@ -778,6 +786,10 @@ header{
 }
 
 @media (max-width: 325px){
+    .desti-best-hero-card{
+        grid-template-columns: repeat(1,1fr);
+        overflow: hidden;
+    }
     header{
         font-size: 0.4rem;
         padding: 1rem 0rem;
