@@ -1,0 +1,938 @@
+:root{
+    --ligth: #FEFCFB;
+    --primart: #FA7436;
+    --secondary: #FFE7DB;
+    --gray: #F7F8FC;
+    --white: #FFFFFF;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --text-color: #222222;
+    --secondary-fond:  "Poppins", serif;
+    --peimary-fond: "Volkhov", serif;
+    
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", serif;
+
+}
+.text-color{
+    color: var(--primart);
+}
+header{
+    background-color: var(--ligth);
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0rem;
+    font-size: 1.5rem;
+}
+.header-hero-div{
+    width: 70vw;
+    background-color: var(--ligth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left{
+    font-size: 1em;
+}
+.header-center{
+    display: flex;
+    gap: 3rem;
+    font-size: 1em;
+}
+.header-center a{
+    text-decoration: none;
+    color: var(--text-color);
+    
+}
+.header-rigth{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1em;
+
+}
+.login-btn{
+    color: var(--primart);
+}
+.singn-up-btn{
+    color: var(--white);
+    background-color: var(--primart);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+/* ---------------------------- header end----------------------------------- */
+
+#home{
+    background-color: var(--ligth);
+    padding-bottom: 5rem;
+}
+.hero{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    font-size: 1rem;
+    gap: 2rem;
+}
+ .hero-left{
+    padding: 1rem;
+    position: relative;
+ }
+ .hero-left h2{
+    font-size: 3.3em;
+    padding: 1em 0em;
+ }
+ .hero-left p{
+    font-size: 2em;
+ }
+ .hero-rigth{
+    max-width: 500px;
+    padding: 1rem;
+ }
+ .hero-left-btn{
+    margin: 5em 0em;
+    padding: 1em 2em;
+    background-color: var(--ligth);
+    border: 2px solid var(--primart);
+    border-radius: 5px;
+    color: var(--primart);
+ }
+.hero-img{
+    position: relative;
+    max-height: auto;
+    max-width: 30rem;
+    background: linear-gradient(var(--ligth)50%,var(--primart)50%);
+    border-radius: 500%;
+    z-index: 122;
+
+}
+.hero-img-tourist{
+    height: 100%;
+    width: 100%;
+    z-index: 122;
+}
+.vector{
+    position: absolute;
+    right: -15%;
+    opacity: 0.5;
+    top: -6%;
+    width: 140%;
+    height: auto;
+    z-index: 11;
+}
+.booking-hero-div{
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    justify-content: space-between;
+    background-color: var(--white);
+    padding: 2em 2em;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.book-box button{
+    color: var(--white);
+    border: none;
+    background-color: var(--primart);
+    padding: 1em 2em;
+    border-radius: 5px;
+}
+/* -------------------------- */
+
+#about{
+    background-color: var(--gray);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+.about-hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+.about-info{
+    text-align: center;
+    display: flex;
+    max-width: 70%;
+    margin: auto;
+}
+.about-info-img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.about-info-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-detial h2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.about-detial p{
+    font-size: 1.5rem;
+}
+.about-hero-card{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 5rem 0rem;
+}
+.about-card{
+    background-color: var(--white);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.about-card-img{
+    max-width: 40px;
+    height: auto;
+    object-fit: cover;
+    margin: 0.5rem;
+}
+.about-card-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-card-info{
+    margin: 2em 0em 1em 1em;
+}
+.about-card-info h2{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.about-card-info p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+/* --------------------------- */
+
+#destination{
+    background-color: var(--white);
+    padding-top: 5rem;
+    font-size: 1rem;
+    padding-bottom: 5rem;
+}
+.destination-head {
+    text-align: center;
+}
+.destination-head h2{
+    font-family: var(--peimary-fond);
+    font-size: 3em;
+    padding: 2rem;
+}
+
+.destination-head p{
+    font-size: 1.5em;
+}
+/* ----------------------------- */
+
+.desti-hero-card{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: auto;
+    gap: 2rem;
+    position: relative;
+
+}
+.desti-card{
+    box-shadow: var(--shadow);
+    margin-top: 5rem;
+}
+.desti-card-img{
+    width: auto;
+    height: auto;
+    position: relative;
+}
+.desti-card-img img{
+    width: 100%;
+    height: 100%;
+}
+/* .desti-card-img:hover{
+    position: absolute;
+    bottom: 15%;
+    left: 28%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px ;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    background-color: var(--primart);
+    z-index: 11111111111111;
+} */
+.book-now{
+    display: none;
+    position: absolute;
+    bottom: 15%;
+    left: 28%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px ;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    background-color: var(--primart);
+    z-index: 11111111111111;
+}
+
+.dest-card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.stare{
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+.desiti-card-amount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0.5rem 2rem;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.amount1{
+    position: relative;
+    font-weight: 350;
+}
+.amount2{
+    color: var(--primart);
+    background-color: var(--secondary);
+    padding: 0rem 0.3rem;
+    border-radius: 5px;
+
+}
+.place p{
+    font-weight: 350;
+}
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin: 4rem;
+}
+.left{
+    border-radius: 50%;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    width:  40px;
+    height: 40px;
+
+}
+.rigth{
+    border-radius: 50%;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    width:  40px;
+    height: 40px;
+   color: var(--white);
+   background-color: var(--primart);
+   border: none;
+    
+}
+.desti-best-hero-card{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 2rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.desti-best-img-card-img{
+     max-height: 400px;
+     width: auto;
+     margin: 0.5rem;
+}
+.desti-best-img-card-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.desti-card1{
+    margin-top: 5rem;
+}
+
+/* ----------------------------------- */
+
+.about-people{
+    background-color: var(--gray);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+}
+.about-people-hero{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 2rem;
+}
+.destination-head h2{
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+.destination-head p{
+    text-align: center;
+}
+
+.user{
+    position: relative;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    padding-right: 4rem;
+    border-radius: 15px;
+    z-index: 111;
+}
+
+.user-head{
+    padding-bottom: 4rem;
+}
+.user h2{
+    padding-bottom: 1rem;
+}
+.us-rigth{
+    position: relative;
+}
+.user2{
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    padding-right: 4rem;
+    border-radius: 15px;
+    opacity: 0.5;
+    margin-left: 10%;
+    z-index: 11;
+    right: -10%;
+    top: 45%;
+}
+.us-rigth-Element-img{
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    width: auto;
+    height: auto;
+}
+/* ---------------------- */
+#blog{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.blog-hero{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.blog-cord-img{
+    width: auto;
+    height: auto;
+}
+.blog-cord-img img{
+    width: 100%;
+    height: 100%;
+}
+.card-info p{
+    margin: 1rem 0;
+}
+.card-info span{
+    padding-bottom: 20px;
+}
+.dote{
+    font-size: 5rem;
+    text-align: center;
+}
+/* ------------------------------/ */
+.last-section{
+    background-color: var(--gray);
+    padding-top: 5rem;
+}
+.last-main-div{
+    max-width: 1200px;
+    margin-top: 5rem;
+    position: relative;
+    margin: auto;
+    position: relative;
+}
+.last-hero{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+}
+.last-rigth{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+/* ----------------------- */
+.mail{
+    width: 100%;
+    margin: auto;
+    background-color: var(--primart);
+    border-radius: 15px;
+    padding: 10rem 0rem;
+    position: relative;
+    
+}
+.input-ing1{
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    width: 40%;
+    opacity: .5;
+
+}
+.input-ing2{
+    position: absolute;
+    top: -5%;
+    right: 5%;
+    opacity: .5;
+    width: 10%;
+}
+.lest-h2{
+    width: 50%;
+    margin: auto;
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    font-family: var(--peimary-fond);
+
+}
+.mail input{
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    z-index: 1999;
+}
+/* ------------------------------------------------------ */
+
+@media (max-width: 1448px){
+    header{
+        font-size: 1rem;
+        padding: 1rem 0rem;
+        justify-content: center;
+    }
+    .header-hero-div {
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .header-center{
+        gap: 2rem;
+    }
+    .header-rigth{
+        gap: 1rem;
+        
+    }
+    .singn-up-btn{
+        width: 3.8em;
+    }
+    /* ------------------------------? */
+   
+}
+
+
+@media (max-width: 1028px){
+    header{
+        font-size: 1rem;
+        padding: 1rem 0rem;
+        justify-content: center;
+    }
+    .header-hero-div {
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .header-center{
+        gap: 1rem;
+    }
+    .header-rigth{
+        gap: 1rem;
+        
+    }
+    .singn-up-btn{
+        width: 3.8em;
+    }
+    /* ------------------------------? */
+   
+}
+
+@media (max-width: 769px){
+    .desti-hero-card{
+        overflow: hidden;
+    }
+    header{
+        font-size: 1rem;
+        padding: 1rem 0rem;
+        justify-content: start;
+    }
+    .header-hero-div {
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .header-center{
+        gap: 1rem;
+    }
+    .header-rigth{
+        gap: 1rem;
+        
+    }
+    .singn-up-btn{
+        width: 3.8em;
+    }
+    /* ------------------------------? */
+   
+}
+
+
+@media (max-width: 428px){
+    header{
+        font-size: 0.6rem;
+        padding: 1rem 0rem;
+        justify-content: start;
+    }
+    .header-hero-div {
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .header-center{
+        gap: 0.5rem;
+    }
+    .header-rigth{
+        gap: 0.5rem;
+        
+    }
+    .singn-up-btn{
+        width: 3.8em;
+    }
+    /* ------------------------------? */
+    #home{
+        width: 100vw;
+    }
+    .hero{
+        width: 10vw;
+        margin: 0%;
+        padding: 0;
+        font-size: 0.2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-left{
+       padding: 0.5rem;
+       width: 95vw;
+       text-align: center;
+       margin: auto;
+    }
+    .hero-left p{
+        padding-right: 3rem;
+    }
+    .hero-left-btn{
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    .hero-rigth{
+        margin: 0%;
+        padding: 0.5rem;
+    }
+    .hero-img{
+        width: 160px;
+        height: auto;
+        margin: 0 0 0 4.5rem;
+    }
+    .booking-hero-div{
+        display: none;
+        width: 70vw;
+        margin: 0% auto;
+        padding: 0% 0.5rem;
+        font-size: 0.5rem;
+    } 
+    /* ---------------- */
+    #about{
+        padding-bottom: 2.5em;
+        margin-bottom: 0;
+    
+    }
+    .about-hero{
+        font-size: 0.6rem;
+    }
+    .about-detial{
+        width: 100%;
+        margin: auto;
+    }
+    .about-detial h2{
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+    .about-detial p{
+        font-size: 1em;
+    }
+    .about-hero-card{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 0%;
+    }
+    .about-info-img{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        opacity: .5;
+        top: 5%;
+        left: 30%;
+    }
+    /* ---------------------------------- */
+    #destination{
+        font-size: 0.5rem;
+        padding-top: 2.5rem;
+    }
+    .destination-head h2{
+        padding: 1rem;
+    }
+    .desti-hero-card{
+        grid-template-columns: repeat(4,1fr);
+        padding: 0 .5rem;
+        overflow-x: hidden;
+    }
+    .desti-card{
+        margin-top: 2.5rem;
+    }
+    /* ------------------------------- */
+    .about-people-hero{
+        display: inline;
+    }
+    .us-rigth{
+        width: 80vw;
+    }
+    /* ------------------------------- */
+    #blog{
+        margin-top: 5rem;
+    }
+    .blog-hero{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 1rem;
+    }
+    .card-info p{
+        font-size: 0.6rem;
+    }
+
+    .card-info span{
+        font-size: 0.6rem;
+    }
+    /* ---------------------- */
+    .last-hero h2{
+        font-size: 0.5rem;
+    }
+    .last-hero p{
+        font-size: 0.5rem;
+    }
+    .last-hero{
+        gap: 2rem;
+    }
+    .last-rigth{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    /* -------------------- */
+    .lest-h2{
+        font-size: 1rem;
+        padding-top: 4em;
+    }
+    .mail{
+        padding:  1rem 0;
+    }
+    .mail input {
+        margin-bottom: 1rem;
+        padding: 0.rem;
+    }
+}
+
+@media (max-width: 325px){
+    header{
+        font-size: 0.4rem;
+        padding: 1rem 0rem;
+        justify-content: start;
+    }
+    .header-hero-div {
+        padding: 0rem 0.5rem;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .header-center{
+        gap: 0.5rem;
+    }
+    .header-rigth{
+        gap: 0.5rem;
+        
+    }
+    .singn-up-btn{
+        width: 3.8em;
+    }
+    /* ------------------------------? */
+    #home{
+        width: 100vw;
+    }
+    .hero{
+        width: 10vw;
+        margin: 0%;
+        padding: 0;
+        font-size: 0.2rem;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-left{
+       padding: 0.5rem;
+       width: 95vw;
+       text-align: center;
+       margin: auto;
+    }
+    .hero-left p{
+        padding-right: 3rem;
+    }
+    .hero-left-btn{
+        padding: 0.5rem;
+        margin: 1rem;
+    }
+    .hero-rigth{
+        margin: 0%;
+        padding: 0.5rem;
+    }
+    .hero-img{
+        width: 160px;
+        height: auto;
+        margin: 0 0 0 4.5rem;
+    }
+    .booking-hero-div{
+        display: none;
+        width: 70vw;
+        margin: 0% auto;
+        padding: 0% 0.5rem;
+        font-size: 0.5rem;
+    } 
+    /* ---------------- */
+    #about{
+        padding-bottom: 2.5em;
+        margin-bottom: 0;
+    
+    }
+    .about-hero{
+        font-size: 0.6rem;
+    }
+    .about-detial{
+        width: 100%;
+        margin: auto;
+    }
+    .about-detial h2{
+        font-size: 2em;
+        padding-bottom: 0.5em;
+    }
+    .about-detial p{
+        font-size: 1em;
+    }
+    .about-hero-card{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 0%;
+    }
+    .about-info-img{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        opacity: .5;
+        top: 5%;
+        left: 30%;
+    }
+    /* ---------------------------------- */
+    #destination{
+        font-size: 0.5rem;
+        padding-top: 2.5rem;
+    }
+    .destination-head h2{
+        padding: 1rem;
+    }
+    .desti-hero-card{
+        grid-template-columns: repeat(4,1fr);
+        padding: 0 .5rem;
+        overflow-x: hidden;
+    }
+    .desti-card{
+        margin-top: 2.5rem;
+    }
+    /* ------------------------------- */
+    .about-people-hero{
+        display: inline;
+    }
+    .us-rigth{
+        width: 80vw;
+    }
+    /* ------------------------------- */
+    #blog{
+        margin-top: 5rem;
+    }
+    .blog-hero{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 1rem;
+    }
+    .card-info p{
+        font-size: 0.6rem;
+    }
+
+    .card-info span{
+        font-size: 0.6rem;
+    }
+    /* ---------------------- */
+    .last-hero h2{
+        font-size: 0.5rem;
+    }
+    .last-hero p{
+        font-size: 0.5rem;
+    }
+    .last-hero{
+        gap: 2rem;
+    }
+    .last-rigth{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    /* -------------------- */
+    .lest-h2{
+        font-size: 1rem;
+        padding-top: 4em;
+    }
+    .mail{
+        padding:  1rem 0;
+    }
+    .mail input {
+        margin-bottom: 1rem;
+        padding: 0.rem;
+    }
+} 
